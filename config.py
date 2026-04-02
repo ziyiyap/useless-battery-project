@@ -1,0 +1,31 @@
+#State of Charge
+SOC_MIN = 0.0
+SOC_MAX = 1.0
+
+
+#Threshold charging/not charging
+CHARGE_ON_THRESHOLD = 0.2
+CHARGE_OFF_THRESHOLD = 0.8
+
+#Simulation config
+TIME_STEPS = 1000
+DT = 1
+
+#CHARGING/DISCHARGING BEHAVIOR
+CHARGE_RATE = 0.005 # 0.5% per time step
+DISCHARGE_RATE = 0.003 # - 0.3% per time step
+
+#Battery capacity
+BATTERY_CAPACITY = 100
+
+#Realism
+NOISE_LEVEL = 0.02
+EFFICIENCY = 0.95
+
+#Degradation
+CYCLE_LIMIT = 1000
+DEGRADATION_RATE = 0.0001
+
+#CONTROL BEHAVIOR
+CONTROL_MODE = "HYSTERESIS"
+SAFE_MODE = True
